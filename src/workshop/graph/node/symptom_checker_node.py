@@ -3,13 +3,13 @@ from langchain_core.output_parsers.string import StrOutputParser
 
 from src.workshop.graph.state import AgentState
 from src.workshop.graph.prompts import SYMPTOM_CHECKER_PROMPT, RETRIEVAL_QUERY_GEN_PROMPT
-from src.workshop.model.AzureOpenAIModel import AzureOpenAIModel
-from src.workshop.service.KnowledgeBaseService import KnowledgeBaseService
+from src.workshop.model.llm import LLM
+from src.workshop.rag.knowledge_base import KnowledgeBase
 
 system_logger = logging.getLogger(__name__)
 
 class SymptomCheckerNode:
-    def __init__(self, model: AzureOpenAIModel, knowledge_base: KnowledgeBaseService):
+    def __init__(self, model: LLM, knowledge_base: KnowledgeBase):
         self.model = model
         self.knowledge_base = knowledge_base
 

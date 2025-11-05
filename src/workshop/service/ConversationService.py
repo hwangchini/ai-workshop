@@ -1,25 +1,47 @@
 """Service layer that uses LangGraph to create a stateful, routing agent."""
 
 import logging
+from functools import wraps
 from typing import Generator, List, Dict, Any
 
 from langchain_core.messages import HumanMessage, BaseMessage
 from langchain.memory import ConversationSummaryBufferMemory
 
-from src.workshop.model.AzureOpenAIModel import AzureOpenAIModel
-from src.workshop.util.LoggingUtil import log_activity
-from src.workshop.service.KnowledgeBaseService import KnowledgeBaseService
+from src.workshop.model.llm import LLM
+from src.workshop.rag.knowledge_base import KnowledgeBase
 from src.workshop.service.AppointmentService import AppointmentService
-from src.workshop.graph.builder.AskMissingInfoGraphBuilder import AskMissingInfoGraphBuilder
-from src.workshop.graph.builder.InformationGatheringGraphBuilder import InformationGatheringGraphBuilder
 from src.workshop.graph.builder.BookingGraphBuilder import BookingGraphBuilder
 from src.workshop.graph.builder.MainGraphBuilder import MainGraphBuilder
 
 system_logger = logging.getLogger(__name__)
 
+def log_activity(func):
+    """A decorator to log the entry and exit of a method to the console."""
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        logger = logging.getLogger(func.__module__)
+        
+        try:
+            class_name = args[0].__class__.__name__
+        except (IndexError, AttributeError):
+            class_name = ""
+        
+        method_name = func.__name__
+        full_name = f"{class_name}.{method_name}" if class_name else method_name
+
+        logger.info(f"Entering method: {full_name}")
+        try:
+            result = func(*args, **kwargs)
+            logger.info(f"Exiting method: {full_name} - Success")
+            return result
+        except Exception as e:
+            logger.error(f"Exiting method: {full_name} - Failed with error: {e}", exc_info=True)
+            raise # Re-raise the exception after logging
+    return wrapper
+
 class ConversationService:
     @log_activity
-    def __init__(self, model: AzureOpenAIModel, knowledge_base: KnowledgeBaseService):
+    def __init__(self, model: LLM, knowledge_base: KnowledgeBase):
         self.model = model
         self.knowledge_base = knowledge_base
         self.appointment_service = AppointmentService()
@@ -35,22 +57,16 @@ class ConversationService:
         )
 
         # Build the dependency chain of graphs
-        ask_missing_info_builder = AskMissingInfoGraphBuilder(self.model, self.knowledge_base)
-        ask_missing_info_graph = ask_missing_info_builder.build()
-
-        info_gathering_builder = InformationGatheringGraphBuilder(self.model, self.knowledge_base, ask_missing_info_graph)
-        info_gathering_graph = info_gathering_builder.build()
-
-        booking_graph_builder = BookingGraphBuilder(info_gathering_graph, self.appointment_service)
+        booking_graph_builder = BookingGraphBuilder(self.model, self.knowledge_base, self.appointment_service)
         booking_graph = booking_graph_builder.build()
 
         main_graph_builder = MainGraphBuilder(self.model, self.knowledge_base, booking_graph)
         self.main_graph = main_graph_builder.build()
 
-        system_logger.info("ConversationService initialized with a deeply nested graph architecture.")
+        system_logger.info("ConversationService initialized with a simplified graph architecture.")
 
     @log_activity
-    def generate_chat_response(self, user_prompt: str, history: List[BaseMessage], user_role: str) -> Generator[str, None, None]:
+    def generate_chat_response(self, user_prompt: str, history: List[BaseMessage]) -> Generator[str, None, None]:
         try:
             # Load chat history from memory
             memory_variables = self.memory.load_memory_variables({})
@@ -61,7 +77,6 @@ class ConversationService:
             current_state.update({
                 "user_question": user_prompt,
                 "chat_history": chat_history,
-                "user_role": user_role,
             })
 
             # Invoke the main graph

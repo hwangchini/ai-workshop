@@ -6,11 +6,11 @@ from src.workshop.graph.node.rag_node import RagNode
 from src.workshop.graph.node.conversation_node import ConversationNode
 from src.workshop.graph.node.symptom_checker_node import SymptomCheckerNode
 from src.workshop.graph.node.appointment_booking_entry_node import AppointmentBookingEntryNode
-from src.workshop.model.AzureOpenAIModel import AzureOpenAIModel
-from src.workshop.service.KnowledgeBaseService import KnowledgeBaseService
+from src.workshop.model.llm import LLM
+from src.workshop.rag.knowledge_base import KnowledgeBase
 
 class MainGraphBuilder:
-    def __init__(self, model: AzureOpenAIModel, knowledge_base: KnowledgeBaseService, booking_graph: StateGraph):
+    def __init__(self, model: LLM, knowledge_base: KnowledgeBase, booking_graph: StateGraph):
         self.model = model
         self.knowledge_base = knowledge_base
         self.booking_graph = booking_graph

@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 from langchain_openai import AzureChatOpenAI, AzureOpenAIEmbeddings
 
-class AzureOpenAIModel:
+class LLM:
     """Loads credentials and creates LangChain-compatible clients for LLM and embeddings."""
 
     def __init__(self):

@@ -16,7 +16,7 @@ class ChromaDBEmbeddingFunction(embedding_functions.EmbeddingFunction):
     def __call__(self, input: chromadb.Documents) -> chromadb.Embeddings:
         return self.model.embedding_model.embed_documents(input)
 
-class KnowledgeBaseService:
+class KnowledgeBase:
     def __init__(self, model: LLM):
         self.model = model
         self.client = chromadb.Client()

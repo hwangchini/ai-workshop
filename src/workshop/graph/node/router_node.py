@@ -2,12 +2,12 @@ import logging
 from langchain_core.output_parsers.string import StrOutputParser
 from src.workshop.graph.state import AgentState
 from src.workshop.graph.prompts import ROUTER_PROMPT
-from src.workshop.model.AzureOpenAIModel import AzureOpenAIModel
+from src.workshop.model.llm import LLM
 
 system_logger = logging.getLogger(__name__)
 
 class RouterNode:
-    def __init__(self, model: AzureOpenAIModel):
+    def __init__(self, model: LLM):
         self.model = model
 
     def execute(self, state: AgentState) -> dict:
