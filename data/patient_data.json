@@ -1,0 +1,771 @@
+{
+  "patients": [
+    {
+      "patient_id": "BN_001",
+      "full_name": "Nguyễn Thị Mai",
+      "date_of_birth": "1985-05-20",
+      "gender": "Nữ",
+      "contact_info": {
+        "phone": "0912345678",
+        "address": "123 Đường ABC, Quận 1, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_001_01",
+          "date": "2023-01-15",
+          "doctor_id": "BS_TM_001",
+          "diagnosis": "Tăng huyết áp",
+          "notes": "Bệnh nhân cần theo dõi huyết áp hàng ngày và tái khám sau 1 tháng."
+        },
+        {
+          "visit_id": "V_001_02",
+          "date": "2023-02-15",
+          "doctor_id": "BS_TM_001",
+          "diagnosis": "Tăng huyết áp - Tái khám",
+          "notes": "Huyết áp đã ổn định hơn. Tiếp tục dùng thuốc theo toa."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_002",
+      "full_name": "Trần Văn Hùng",
+      "date_of_birth": "1990-11-10",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0987654321",
+        "address": "456 Đường XYZ, Quận 2, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_002_01",
+          "date": "2023-03-20",
+          "doctor_id": "BS_TH_003",
+          "diagnosis": "Viêm dạ dày cấp",
+          "notes": "Kê đơn thuốc và dặn dò chế độ ăn uống. Tái khám nếu không đỡ."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_003",
+      "full_name": "Lê Thị Lan Anh",
+      "date_of_birth": "1978-08-12",
+      "gender": "Nữ",
+      "contact_info": {
+        "phone": "0905112233",
+        "address": "789 Đường GHI, Quận 3, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_003_01",
+          "date": "2023-04-10",
+          "doctor_id": "BS_SAN_010",
+          "diagnosis": "Khám thai định kỳ - Tuần 12",
+          "notes": "Sức khỏe mẹ và bé ổn định."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_004",
+      "full_name": "Phạm Văn Tuấn",
+      "date_of_birth": "2018-02-25",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0938445566",
+        "address": "101 Đường KLM, Quận 4, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_004_01",
+          "date": "2023-05-05",
+          "doctor_id": "BS_NHITQ_012",
+          "diagnosis": "Sốt siêu vi",
+          "notes": "Hạ sốt, uống nhiều nước, theo dõi thêm."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_005",
+      "full_name": "Vũ Thị Kim Oanh",
+      "date_of_birth": "1965-12-01",
+      "gender": "Nữ",
+      "contact_info": {
+        "phone": "0977889900",
+        "address": "212 Đường NOP, Quận 5, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_005_01",
+          "date": "2023-06-01",
+          "doctor_id": "BS_NT_007",
+          "diagnosis": "Đái tháo đường type 2",
+          "notes": "Điều chỉnh liều thuốc, tư vấn chế độ dinh dưỡng."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_006",
+      "full_name": "Đặng Minh Khôi",
+      "date_of_birth": "1982-03-15",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0918273645",
+        "address": "313 Đường QRS, Quận 6, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_006_01",
+          "date": "2023-07-18",
+          "doctor_id": "BS_DL_016",
+          "diagnosis": "Viêm da cơ địa",
+          "notes": "Kê đơn thuốc bôi và thuốc uống."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_007",
+      "full_name": "Hồ Thị Ngọc",
+      "date_of_birth": "1995-07-22",
+      "gender": "Nữ",
+      "contact_info": {
+        "phone": "0945612378",
+        "address": "414 Đường TUV, Quận 7, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_007_01",
+          "date": "2023-08-02",
+          "doctor_id": "BS_TMH_015",
+          "diagnosis": "Viêm họng cấp",
+          "notes": "Kê đơn kháng sinh và thuốc giảm đau."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_008",
+      "full_name": "Trịnh Quốc Bảo",
+      "date_of_birth": "1970-01-30",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0966778899",
+        "address": "515 Đường WXY, Quận 8, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_008_01",
+          "date": "2023-09-11",
+          "doctor_id": "BS_MAT_014",
+          "diagnosis": "Khô mắt",
+          "notes": "Sử dụng nước mắt nhân tạo."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_009",
+      "full_name": "Nguyễn Ngọc Anh",
+      "date_of_birth": "1988-09-09",
+      "gender": "Nữ",
+      "contact_info": {
+        "phone": "0909101112",
+        "address": "616 Đường ZAB, Quận 9, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_009_01",
+          "date": "2023-10-25",
+          "doctor_id": "BS_TH_006",
+          "diagnosis": "Hội chứng ruột kích thích (IBS)",
+          "notes": "Tư vấn thay đổi lối sống và chế độ ăn."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_010",
+      "full_name": "Lý Văn Toàn",
+      "date_of_birth": "1992-04-18",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0922334455",
+        "address": "717 Đường CDE, Quận 10, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_010_01",
+          "date": "2023-11-30",
+          "doctor_id": "BS_NGTQ_009",
+          "diagnosis": "Nghi ngờ thoát vị bẹn",
+          "notes": "Chỉ định siêu âm để xác nhận."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_011",
+      "full_name": "Đinh Thị Thu Thủy",
+      "date_of_birth": "1980-06-21",
+      "gender": "Nữ",
+      "contact_info": {
+        "phone": "0955667788",
+        "address": "818 Đường FGH, Quận 11, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_011_01",
+          "date": "2024-01-05",
+          "doctor_id": "BS_HT_020",
+          "diagnosis": "Tái khám sau hóa trị",
+          "notes": "Các chỉ số ổn định, tiếp tục theo dõi."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_012",
+      "full_name": "Võ Minh Tâm",
+      "date_of_birth": "1975-10-02",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0988990011",
+        "address": "919 Đường IJK, Quận 12, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_012_01",
+          "date": "2024-02-14",
+          "doctor_id": "BS_TM_002",
+          "diagnosis": "Rối loạn nhịp tim",
+          "notes": "Chỉ định đeo Holter ECG 24h."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_013",
+      "full_name": "Hoàng Anh Khoa",
+      "date_of_birth": "1998-12-12",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0911223344",
+        "address": "121 Đường LMN, Quận Gò Vấp, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_013_01",
+          "date": "2024-03-01",
+          "doctor_id": "BS_NHITQ_013",
+          "diagnosis": "Viêm phế quản",
+          "notes": "Kê đơn thuốc kháng viêm và long đờm."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_014",
+      "full_name": "Ngô Thanh Trúc",
+      "date_of_birth": "1989-07-07",
+      "gender": "Nữ",
+      "contact_info": {
+        "phone": "0933445566",
+        "address": "232 Đường OPQ, Quận Bình Thạnh, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_014_01",
+          "date": "2024-04-22",
+          "doctor_id": "BS_SAN_011",
+          "diagnosis": "Viêm nhiễm phụ khoa",
+          "notes": "Kê đơn thuốc đặt và dặn dò vệ sinh."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_015",
+      "full_name": "Bùi Chí Công",
+      "date_of_birth": "1969-01-19",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0965432109",
+        "address": "343 Đường RST, Quận Phú Nhuận, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_015_01",
+          "date": "2024-05-18",
+          "doctor_id": "BS_PTTK_008",
+          "diagnosis": "Đau đầu kéo dài",
+          "notes": "Chỉ định chụp MRI sọ não."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_016",
+      "full_name": "Đỗ Thị Bích Phượng",
+      "date_of_birth": "1993-11-23",
+      "gender": "Nữ",
+      "contact_info": {
+        "phone": "0989123456",
+        "address": "454 Đường UVW, Quận Tân Bình, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_016_01",
+          "date": "2024-06-07",
+          "doctor_id": "BS_DL_016",
+          "diagnosis": "Mụn trứng cá nặng",
+          "notes": "Tư vấn liệu trình điều trị chuyên sâu."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_017",
+      "full_name": "Lê Quốc Hưng",
+      "date_of_birth": "1987-04-01",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0903888999",
+        "address": "565 Đường XYZ, Quận Tân Phú, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_017_01",
+          "date": "2024-07-01",
+          "doctor_id": "BS_TM_005",
+          "diagnosis": "Đau ngực không rõ nguyên nhân",
+          "notes": "Chỉ định làm điện tâm đồ và xét nghiệm men tim."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_018",
+      "full_name": "Phan Thị Diễm",
+      "date_of_birth": "1959-09-15",
+      "gender": "Nữ",
+      "contact_info": {
+        "phone": "0913456789",
+        "address": "676 Đường ABC, Quận 1, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_018_01",
+          "date": "2024-07-15",
+          "doctor_id": "BS_HT_019",
+          "diagnosis": "Khám sàng lọc ung thư vú",
+          "notes": "Chỉ định chụp nhũ ảnh."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_019",
+      "full_name": "Trần Minh Quang",
+      "date_of_birth": "2005-05-05",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0978111222",
+        "address": "787 Đường DEF, Quận 2, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_019_01",
+          "date": "2024-07-20",
+          "doctor_id": "BS_SA_018",
+          "diagnosis": "Đau bụng vùng hạ sườn phải",
+          "notes": "Chỉ định siêu âm ổ bụng tổng quát."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_020",
+      "full_name": "Vũ Hoàng Yến",
+      "date_of_birth": "1999-01-01",
+      "gender": "Nữ",
+      "contact_info": {
+        "phone": "0902333444",
+        "address": "898 Đường GHI, Quận 3, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_020_01",
+          "date": "2024-07-22",
+          "doctor_id": "BS_XQ_017",
+          "diagnosis": "Ho kéo dài",
+          "notes": "Chỉ định chụp X-quang phổi."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_021",
+      "full_name": "Mai Đức Chung",
+      "date_of_birth": "1951-06-21",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0912345679",
+        "address": "111 Đường JKL, Quận 4, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_021_01",
+          "date": "2024-08-01",
+          "doctor_id": "BS_CTCH_025",
+          "diagnosis": "Đau khớp gối",
+          "notes": "Chỉ định chụp X-quang khớp gối."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_022",
+      "full_name": "Đoàn Văn Hậu",
+      "date_of_birth": "1999-04-19",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0987654322",
+        "address": "222 Đường MNO, Quận 5, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_022_01",
+          "date": "2024-08-02",
+          "doctor_id": "BS_CTCH_025",
+          "diagnosis": "Chấn thương dây chằng chéo trước",
+          "notes": "Tư vấn phẫu thuật tái tạo dây chằng."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_023",
+      "full_name": "Nguyễn Quang Hải",
+      "date_of_birth": "1997-04-12",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0905112234",
+        "address": "333 Đường PQR, Quận 6, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_023_01",
+          "date": "2024-08-03",
+          "doctor_id": "BS_TM_021",
+          "diagnosis": "Kiểm tra sức khỏe tổng quát",
+          "notes": "Sức khỏe tốt, không có vấn đề gì bất thường."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_024",
+      "full_name": "Nguyễn Công Phượng",
+      "date_of_birth": "1995-01-21",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0938445567",
+        "address": "444 Đường STU, Quận 7, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_024_01",
+          "date": "2024-08-04",
+          "doctor_id": "BS_TH_022",
+          "diagnosis": "Rối loạn tiêu hóa",
+          "notes": "Kê đơn men vi sinh và thuốc điều hòa nhu động ruột."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_025",
+      "full_name": "Lương Xuân Trường",
+      "date_of_birth": "1995-04-28",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0977889901",
+        "address": "555 Đường VWX, Quận 8, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_025_01",
+          "date": "2024-08-05",
+          "doctor_id": "BS_MAT_028",
+          "diagnosis": "Cận thị",
+          "notes": "Đo và cắt kính mới."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_026",
+      "full_name": "Nguyễn Văn Toàn",
+      "date_of_birth": "1996-04-12",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0918273646",
+        "address": "666 Đường YZA, Quận 9, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_026_01",
+          "date": "2024-08-06",
+          "doctor_id": "BS_DL_030",
+          "diagnosis": "Nấm da",
+          "notes": "Kê đơn thuốc bôi kháng nấm."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_027",
+      "full_name": "Phan Văn Đức",
+      "date_of_birth": "1996-04-11",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0945612379",
+        "address": "777 Đường BCD, Quận 10, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_027_01",
+          "date": "2024-08-07",
+          "doctor_id": "BS_TMH_029",
+          "diagnosis": "Viêm xoang",
+          "notes": "Kê đơn thuốc xịt mũi và kháng sinh."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_028",
+      "full_name": "Hà Đức Chinh",
+      "date_of_birth": "1997-09-22",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0966778890",
+        "address": "888 Đường EFG, Quận 11, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_028_01",
+          "date": "2024-08-08",
+          "doctor_id": "BS_SA_032",
+          "diagnosis": "Sỏi thận",
+          "notes": "Chỉ định siêu âm hệ tiết niệu."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_029",
+      "full_name": "Bùi Tiến Dũng",
+      "date_of_birth": "1997-02-28",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0909101113",
+        "address": "999 Đường HIJ, Quận 12, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_029_01",
+          "date": "2024-08-09",
+          "doctor_id": "BS_XQ_031",
+          "diagnosis": "Nghi ngờ gãy xương tay",
+          "notes": "Chỉ định chụp X-quang xương cẳng tay."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_030",
+      "full_name": "Đặng Văn Lâm",
+      "date_of_birth": "1993-08-13",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0922334456",
+        "address": "112 Đường KLM, Quận Gò Vấp, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_030_01",
+          "date": "2024-08-10",
+          "doctor_id": "BS_GM_038",
+          "diagnosis": "Khám tiền phẫu thuật",
+          "notes": "Đánh giá sức khỏe trước khi gây mê."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_031",
+      "full_name": "Nguyễn Tuấn Anh",
+      "date_of_birth": "1995-05-16",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0955667789",
+        "address": "223 Đường NOP, Quận Bình Thạnh, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_031_01",
+          "date": "2024-08-11",
+          "doctor_id": "BS_HSTC_039",
+          "diagnosis": "Theo dõi sau phẫu thuật",
+          "notes": "Tình trạng ổn định, đang hồi phục tốt."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_032",
+      "full_name": "Vũ Văn Thanh",
+      "date_of_birth": "1996-04-14",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0988990012",
+        "address": "334 Đường QRS, Quận Phú Nhuận, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_032_01",
+          "date": "2024-08-12",
+          "doctor_id": "BS_DDLS_040",
+          "diagnosis": "Tư vấn dinh dưỡng cho vận động viên",
+          "notes": "Xây dựng chế độ ăn tăng cường thể lực."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_033",
+      "full_name": "Nguyễn Phong Hồng Duy",
+      "date_of_birth": "1996-06-13",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0911223345",
+        "address": "445 Đường TUV, Quận Tân Bình, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_033_01",
+          "date": "2024-08-13",
+          "doctor_id": "BS_CC_034",
+          "diagnosis": "Đau lưng mạn tính",
+          "notes": "Thực hiện liệu trình châm cứu."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_034",
+      "full_name": "Trần Đình Trọng",
+      "date_of_birth": "1997-04-25",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0933445567",
+        "address": "556 Đường WXY, Quận Tân Phú, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_034_01",
+          "date": "2024-08-14",
+          "doctor_id": "BS_BH_035",
+          "diagnosis": "Mất ngủ",
+          "notes": "Thực hiện liệu pháp bấm huyệt an thần."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_035",
+      "full_name": "Đỗ Duy Mạnh",
+      "date_of_birth": "1996-09-29",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0965432100",
+        "address": "667 Đường ZAB, Quận 1, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_035_01",
+          "date": "2024-08-15",
+          "doctor_id": "BS_TLLS_036",
+          "diagnosis": "Rối loạn lo âu",
+          "notes": "Tư vấn tâm lý và liệu pháp hành vi."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_036",
+      "full_name": "Phạm Đức Huy",
+      "date_of_birth": "1995-01-20",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0989123457",
+        "address": "778 Đường CDE, Quận 2, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_036_01",
+          "date": "2024-08-16",
+          "doctor_id": "BS_TTK_037",
+          "diagnosis": "Trầm cảm nhẹ",
+          "notes": "Kê đơn thuốc và theo dõi tâm lý."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_037",
+      "full_name": "Nguyễn Thành Chung",
+      "date_of_birth": "1997-09-08",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0903888990",
+        "address": "889 Đường FGH, Quận 3, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_037_01",
+          "date": "2024-08-17",
+          "doctor_id": "BS_NT_023",
+          "diagnosis": "Bướu cổ đơn thuần",
+          "notes": "Theo dõi định kỳ, chưa cần can thiệp."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_038",
+      "full_name": "Hồ Tấn Tài",
+      "date_of_birth": "1997-11-06",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0913456780",
+        "address": "990 Đường IJK, Quận 4, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_038_01",
+          "date": "2024-08-18",
+          "doctor_id": "BS_NGTQ_024",
+          "diagnosis": "Viêm ruột thừa",
+          "notes": "Chỉ định phẫu thuật cắt ruột thừa nội soi."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_039",
+      "full_name": "Nguyễn Tiến Linh",
+      "date_of_birth": "1997-10-20",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0978111223",
+        "address": "113 Đường LMN, Quận 5, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_039_01",
+          "date": "2024-08-19",
+          "doctor_id": "BS_SAN_026",
+          "diagnosis": "Vợ đi khám thai",
+          "notes": "Chồng đi cùng vợ khám thai định kỳ."
+        }
+      ]
+    },
+    {
+      "patient_id": "BN_040",
+      "full_name": "Nguyễn Hoàng Đức",
+      "date_of_birth": "1998-01-11",
+      "gender": "Nam",
+      "contact_info": {
+        "phone": "0902333445",
+        "address": "224 Đường OPQ, Quận 6, TP.HCM"
+      },
+      "medical_history": [
+        {
+          "visit_id": "V_040_01",
+          "date": "2024-08-20",
+          "doctor_id": "BS_NHITQ_027",
+          "diagnosis": "Tiêm chủng vắc-xin 6 trong 1",
+          "notes": "Trẻ không sốt sau tiêm, theo dõi tại nhà."
+        }
+      ]
+    }
+  ]
+}

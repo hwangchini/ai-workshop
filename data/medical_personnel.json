@@ -1,0 +1,447 @@
+{
+  "specialties": [
+    {
+      "specialty_name": "Nội khoa",
+      "specialty_code": "NK",
+      "description": "Chẩn đoán và điều trị các bệnh lý nội khoa mà không cần can thiệp phẫu thuật.",
+      "departments": [
+        {
+          "department_name": "Khoa Tim mạch",
+          "department_code": "TM",
+          "doctors": [
+            {
+              "doctor_id": "BS_TM_001",
+              "full_name": "Nguyễn Văn An",
+              "degree": "Tiến sĩ, Bác sĩ",
+              "position": "Trưởng khoa"
+            },
+            {
+              "doctor_id": "BS_TM_002",
+              "full_name": "Trần Thị Bình",
+              "degree": "Thạc sĩ, Bác sĩ",
+              "position": "Phó khoa"
+            },
+            {
+              "doctor_id": "BS_TM_005",
+              "full_name": "Hoàng Minh Đức",
+              "degree": "Bác sĩ Chuyên khoa I",
+              "position": "Bác sĩ điều trị"
+            },
+            {
+              "doctor_id": "BS_TM_021",
+              "full_name": "Lê Quang Vinh",
+              "degree": "Bác sĩ",
+              "position": "Bác sĩ nội trú"
+            }
+          ]
+        },
+        {
+          "department_name": "Khoa Tiêu hóa",
+          "department_code": "TH",
+          "doctors": [
+            {
+              "doctor_id": "BS_TH_003",
+              "full_name": "Lê Văn Cường",
+              "degree": "Bác sĩ Chuyên khoa II",
+              "position": "Bác sĩ Điều trị chính"
+            },
+            {
+              "doctor_id": "BS_TH_006",
+              "full_name": "Phạm Thu Hà",
+              "degree": "Thạc sĩ, Bác sĩ",
+              "position": "Bác sĩ điều trị"
+            },
+            {
+              "doctor_id": "BS_TH_022",
+              "full_name": "Mai Anh Tuấn",
+              "degree": "Bác sĩ",
+              "position": "Bác sĩ"
+            }
+          ]
+        },
+        {
+          "department_name": "Khoa Nội tiết",
+          "department_code": "NT",
+          "doctors": [
+            {
+              "doctor_id": "BS_NT_007",
+              "full_name": "Vũ Ngọc Mai",
+              "degree": "Tiến sĩ, Bác sĩ",
+              "position": "Bác sĩ chính"
+            },
+            {
+              "doctor_id": "BS_NT_023",
+              "full_name": "Đặng Thị Hương",
+              "degree": "Thạc sĩ, Bác sĩ",
+              "position": "Bác sĩ điều trị"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "specialty_name": "Ngoại khoa",
+      "specialty_code": "NGK",
+      "description": "Thực hiện các phương pháp điều trị bằng phẫu thuật.",
+      "departments": [
+        {
+          "department_name": "Khoa Phẫu thuật Thần kinh",
+          "department_code": "PTTK",
+          "doctors": [
+            {
+              "doctor_id": "BS_PTTK_004",
+              "full_name": "Phạm Thị Dung",
+              "degree": "Giáo sư, Tiến sĩ, Bác sĩ",
+              "position": "Cố vấn chuyên môn"
+            },
+            {
+              "doctor_id": "BS_PTTK_008",
+              "full_name": "Trịnh Văn Khoa",
+              "degree": "Tiến sĩ, Bác sĩ",
+              "position": "Trưởng khoa"
+            }
+          ]
+        },
+        {
+          "department_name": "Khoa Ngoại Tổng quát",
+          "department_code": "NGTQ",
+          "doctors": [
+            {
+              "doctor_id": "BS_NGTQ_009",
+              "full_name": "Đỗ Mạnh Hùng",
+              "degree": "Bác sĩ Chuyên khoa II",
+              "position": "Phó khoa"
+            },
+            {
+              "doctor_id": "BS_NGTQ_024",
+              "full_name": "Nguyễn Xuân Phúc",
+              "degree": "Bác sĩ",
+              "position": "Bác sĩ phẫu thuật"
+            }
+          ]
+        },
+        {
+          "department_name": "Khoa Chấn thương chỉnh hình",
+          "department_code": "CTCH",
+          "doctors": [
+            {
+              "doctor_id": "BS_CTCH_025",
+              "full_name": "Bùi Đức Minh",
+              "degree": "Bác sĩ Chuyên khoa I",
+              "position": "Bác sĩ điều trị"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "specialty_name": "Sản phụ khoa",
+      "specialty_code": "SPK",
+      "description": "Chăm sóc sức khỏe sinh sản cho phụ nữ.",
+      "departments": [
+        {
+          "department_name": "Khoa Sản",
+          "department_code": "SAN",
+          "doctors": [
+            {
+              "doctor_id": "BS_SAN_010",
+              "full_name": "Ngô Thị Thanh",
+              "degree": "Thạc sĩ, Bác sĩ",
+              "position": "Trưởng khoa"
+            },
+            {
+              "doctor_id": "BS_SAN_011",
+              "full_name": "Lý Thị Lan",
+              "degree": "Bác sĩ Chuyên khoa I",
+              "position": "Bác sĩ điều trị"
+            },
+            {
+              "doctor_id": "BS_SAN_026",
+              "full_name": "Trần Thị Ngọc Ánh",
+              "degree": "Bác sĩ",
+              "position": "Bác sĩ sản khoa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "specialty_name": "Nhi khoa",
+      "specialty_code": "NHIK",
+      "description": "Chăm sóc sức khỏe cho trẻ em và trẻ sơ sinh.",
+      "departments": [
+        {
+          "department_name": "Khoa Nhi tổng quát",
+          "department_code": "NHITQ",
+          "doctors": [
+            {
+              "doctor_id": "BS_NHITQ_012",
+              "full_name": "Dương Minh Long",
+              "degree": "Tiến sĩ, Bác sĩ",
+              "position": "Trưởng khoa"
+            },
+            {
+              "doctor_id": "BS_NHITQ_013",
+              "full_name": "Bùi Thị Thảo",
+              "degree": "Bác sĩ nội trú",
+              "position": "Bác sĩ điều trị"
+            },
+            {
+              "doctor_id": "BS_NHITQ_027",
+              "full_name": "Phan Thị Kim Liên",
+              "degree": "Bác sĩ Chuyên khoa I",
+              "position": "Bác sĩ nhi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "specialty_name": "Chuyên khoa lẻ",
+      "specialty_code": "CKL",
+      "description": "Các chuyên khoa đặc thù khác.",
+      "departments": [
+        {
+          "department_name": "Khoa Mắt",
+          "department_code": "MAT",
+          "doctors": [
+            {
+              "doctor_id": "BS_MAT_014",
+              "full_name": "Vũ Ngọc Lan",
+              "degree": "Bác sĩ Chuyên khoa II",
+              "position": "Bác sĩ chính"
+            },
+            {
+              "doctor_id": "BS_MAT_028",
+              "full_name": "Hà Tuấn Kiệt",
+              "degree": "Bác sĩ",
+              "position": "Bác sĩ mắt"
+            }
+          ]
+        },
+        {
+          "department_name": "Khoa Tai-Mũi-Họng",
+          "department_code": "TMH",
+          "doctors": [
+            {
+              "doctor_id": "BS_TMH_015",
+              "full_name": "Hồ Quang Phong",
+              "degree": "Thạc sĩ, Bác sĩ",
+              "position": "Bác sĩ điều trị"
+            },
+            {
+              "doctor_id": "BS_TMH_029",
+              "full_name": "Nguyễn Thị Thu",
+              "degree": "Bác sĩ",
+              "position": "Bác sĩ tai mũi họng"
+            }
+          ]
+        },
+        {
+          "department_name": "Khoa Da liễu",
+          "department_code": "DL",
+          "doctors": [
+            {
+              "doctor_id": "BS_DL_016",
+              "full_name": "Trần Mỹ Linh",
+              "degree": "Bác sĩ Chuyên khoa I",
+              "position": "Bác sĩ điều trị"
+            },
+            {
+              "doctor_id": "BS_DL_030",
+              "full_name": "Lê Thị Bích Trâm",
+              "degree": "Bác sĩ",
+              "position": "Bác sĩ da liễu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "specialty_name": "Chẩn đoán hình ảnh",
+      "specialty_code": "CDHA",
+      "description": "Sử dụng các kỹ thuật hình ảnh để chẩn đoán bệnh.",
+      "departments": [
+        {
+          "department_name": "Khoa X-Quang",
+          "department_code": "XQ",
+          "doctors": [
+            {
+              "doctor_id": "BS_XQ_017",
+              "full_name": "Nguyễn Anh Dũng",
+              "degree": "Bác sĩ",
+              "position": "Bác sĩ chẩn đoán hình ảnh"
+            },
+            {
+              "doctor_id": "BS_XQ_031",
+              "full_name": "Trần Văn Giàu",
+              "degree": "Kỹ thuật viên trưởng",
+              "position": "Kỹ thuật viên X-Quang"
+            }
+          ]
+        },
+        {
+          "department_name": "Khoa Siêu âm",
+          "department_code": "SA",
+          "doctors": [
+            {
+              "doctor_id": "BS_SA_018",
+              "full_name": "Lê Thị Hồng",
+              "degree": "Bác sĩ",
+              "position": "Bác sĩ chẩn đoán hình ảnh"
+            },
+            {
+              "doctor_id": "BS_SA_032",
+              "full_name": "Phạm Thị Huệ",
+              "degree": "Bác sĩ",
+              "position": "Bác sĩ siêu âm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "specialty_name": "Ung bướu",
+      "specialty_code": "UB",
+      "description": "Chẩn đoán và điều trị các bệnh lý ung thư.",
+      "departments": [
+        {
+          "department_name": "Khoa Hóa trị",
+          "department_code": "HT",
+          "doctors": [
+            {
+              "doctor_id": "BS_HT_019",
+              "full_name": "Phan Thanh Nam",
+              "degree": "Phó Giáo sư, Tiến sĩ, Bác sĩ",
+              "position": "Trưởng khoa"
+            },
+            {
+              "doctor_id": "BS_HT_020",
+              "full_name": "Võ Thị Kim Chi",
+              "degree": "Thạc sĩ, Bác sĩ",
+              "position": "Bác sĩ điều trị"
+            },
+            {
+              "doctor_id": "BS_HT_033",
+              "full_name": "Nguyễn Thị Minh Khai",
+              "degree": "Bác sĩ",
+              "position": "Bác sĩ hóa trị"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "specialty_name": "Y học cổ truyền",
+      "specialty_code": "YHCT",
+      "description": "Sử dụng các phương pháp y học cổ truyền để chẩn đoán và điều trị.",
+      "departments": [
+        {
+          "department_name": "Khoa Châm cứu",
+          "department_code": "CC",
+          "doctors": [
+            {
+              "doctor_id": "BS_CC_034",
+              "full_name": "Lương Y Nguyễn Tài Thu",
+              "degree": "Lương y đa khoa",
+              "position": "Trưởng khoa"
+            }
+          ]
+        },
+        {
+          "department_name": "Khoa Bấm huyệt",
+          "department_code": "BH",
+          "doctors": [
+            {
+              "doctor_id": "BS_BH_035",
+              "full_name": "Lương Y Trần Văn Nam",
+              "degree": "Lương y",
+              "position": "Bác sĩ bấm huyệt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "specialty_name": "Tâm thần",
+      "specialty_code": "TT",
+      "description": "Chẩn đoán và điều trị các bệnh lý tâm thần.",
+      "departments": [
+        {
+          "department_name": "Khoa Tâm lý lâm sàng",
+          "department_code": "TLLS",
+          "doctors": [
+            {
+              "doctor_id": "BS_TLLS_036",
+              "full_name": "Tiến sĩ tâm lý Đinh Đoàn",
+              "degree": "Tiến sĩ tâm lý",
+              "position": "Chuyên gia tâm lý"
+            }
+          ]
+        },
+        {
+          "department_name": "Khoa Tâm thần kinh",
+          "department_code": "TTK",
+          "doctors": [
+            {
+              "doctor_id": "BS_TTK_037",
+              "full_name": "Bác sĩ Nguyễn Duy Tùng",
+              "degree": "Bác sĩ Chuyên khoa II",
+              "position": "Bác sĩ tâm thần kinh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "specialty_name": "Gây mê hồi sức",
+      "specialty_code": "GMHS",
+      "description": "Thực hiện gây mê và hồi sức cho bệnh nhân trong và sau phẫu thuật.",
+      "departments": [
+        {
+          "department_name": "Khoa Gây mê",
+          "department_code": "GM",
+          "doctors": [
+            {
+              "doctor_id": "BS_GM_038",
+              "full_name": "Bác sĩ Trần Thị Minh",
+              "degree": "Bác sĩ Chuyên khoa I",
+              "position": "Bác sĩ gây mê"
+            }
+          ]
+        },
+        {
+          "department_name": "Khoa Hồi sức tích cực",
+          "department_code": "HSTC",
+          "doctors": [
+            {
+              "doctor_id": "BS_HSTC_039",
+              "full_name": "Bác sĩ Nguyễn Văn Bình",
+              "degree": "Bác sĩ Chuyên khoa II",
+              "position": "Bác sĩ hồi sức"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "specialty_name": "Dinh dưỡng",
+      "specialty_code": "DD",
+      "description": "Tư vấn và điều trị các vấn đề về dinh dưỡng.",
+      "departments": [
+        {
+          "department_name": "Khoa Dinh dưỡng lâm sàng",
+          "department_code": "DDLS",
+          "doctors": [
+            {
+              "doctor_id": "BS_DDLS_040",
+              "full_name": "Chuyên gia dinh dưỡng Lê Thị Hà",
+              "degree": "Thạc sĩ dinh dưỡng",
+              "position": "Chuyên gia dinh dưỡng"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

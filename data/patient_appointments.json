@@ -1,0 +1,11 @@
+{
+  "appointments": [
+    {
+      "appointment_id": "APP_1761919071",
+      "patient_id": "BN_HƯNG",
+      "doctor_id": "BS_PHONG",
+      "appointment_datetime": "2025-11-01T08:00:00",
+      "status": "confirmed"
+    }
+  ]
+}
